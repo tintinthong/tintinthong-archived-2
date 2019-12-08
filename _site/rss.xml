@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Author&apos;s fancy blog</title>
+        <link>https://example.com/posts</link>
+        <description>Author&apos;s blog posts</description>
+        <lastBuildDate>Sun, 08 Dec 2019 07:43:49 GMT</lastBuildDate>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <generator>Elmstatic</generator>
+        <language>en</language>
+        <image>
+            <title>Author&apos;s fancy blog</title>
+            <url>https://example.com/img/logo.png</url>
+            <link>https://example.com/posts</link>
+        </image>
+        <copyright>Copyright: Author</copyright>
+        <item>
+            <title><![CDATA[Necessary and Sufficient Conditions]]></title>
+            <link>https://example.com/posts/2016-05-01-sufficient-and-necessary</link>
+            <guid>https://example.com/posts/2016-05-01-sufficient-and-necessary</guid>
+            <pubDate>Sun, 01 May 2016 00:00:00 GMT</pubDate>
+            <description><![CDATA["Clear up your language logic"]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Red Hat Blue Hat]]></title>
+            <link>https://example.com/posts/2016-05-22-red-hat-blue-hat</link>
+            <guid>https://example.com/posts/2016-05-22-red-hat-blue-hat</guid>
+            <pubDate>Sun, 22 May 2016 00:00:00 GMT</pubDate>
+            <description><![CDATA[
+Problem
+
+There are 3 red hats and 2 blue hats in a box and everybody knows. Three people stand in a line facing in one direction. The 3rd person in the line, can see the top of the 1st and 2nd person's head. The 2nd person in the line can only see the top of the 1st person's head, but not the 3rd person's head. The 1st person cannot see neither the 2nd nor the 3rd person's head. All are blindfolded. And as they cannot see, an alien places at random a hat from the box on each of their head's.
+
+T...]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Janteloven]]></title>
+            <link>https://example.com/posts/2017-06-24-janteloven</link>
+            <guid>https://example.com/posts/2017-06-24-janteloven</guid>
+            <pubDate>Sat, 24 Jun 2017 00:00:00 GMT</pubDate>
+            <description><![CDATA[
+
+"Janteloven". I came across this cultural term through my travels to
+Copenhagen, Denmark. If you ask any person in Denmark they
+would recall it as the story told to them when they were children
+in school. The origins of the word came from a novel “En
+flyktning krysser sitt spor” or “A Fugitive Crosses His Tracks”
+written by Aksel Sandemose. The novel portrays a small Danish
+town named Jante at the beginning of the 20th Century. The town of Jante has 10 laws, known as The Laws of Jante. Amongst...]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Mountain Climbing Monk]]></title>
+            <link>https://example.com/posts/2018-01-03-mountain-climbing-monk</link>
+            <guid>https://example.com/posts/2018-01-03-mountain-climbing-monk</guid>
+            <pubDate>Wed, 03 Jan 2018 00:00:00 GMT</pubDate>
+            <description><![CDATA[
+
+   -->
+
+   -->
+
+Question
+
+Beginning at sunrise, a Buddhist monk threads the 2-ft wide paths of Kathmandu to reach a temple at the mountain's peak. The monk doesn't travel continuously, in fact, he makes regular breaks and seldom walks the same speed. Eventually, he reaches the temple by sunset.
+
+After meditating and praying for days at the temple, he decides to return down the mountain using the same path. Similar to his upwards journey, he begins at sunrise. The walk was (also) discontinuous ...]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Chess Dominoes]]></title>
+            <link>https://example.com/posts/2019-06-01-chess-dominoes</link>
+            <guid>https://example.com/posts/2019-06-01-chess-dominoes</guid>
+            <pubDate>Sat, 01 Jun 2019 00:00:00 GMT</pubDate>
+            <description><![CDATA[
+
+   -->
+
+   -->
+
+Question
+
+A normal chessboard has 64 squares. Say if I have a rectangular tile (2 by 1), it is obvious that I can fit 64 tiles onto the chessboard exactly. Consider now that I removed the two corner pieces highlighted in red. Will I be able to fit 62 square tiles exactly?
+
+My Thoughts
+
+This is perhaps one of my favorite puzzles because of the simplicity in it's solution. But first let's go through my thought process.
+
+The first thing I tried is to start placing (2 by 1) pieces....]]></description>
+        </item>
+        <item>
+            <title><![CDATA[How to Build a Hangman Game Real Quick]]></title>
+            <link>https://example.com/posts/2019-06-09-how-to-build-a-hangman-game-real-quick</link>
+            <guid>https://example.com/posts/2019-06-09-how-to-build-a-hangman-game-real-quick</guid>
+            <pubDate>Sun, 09 Jun 2019 00:00:00 GMT</pubDate>
+            <description><![CDATA[
+
+   -->
+
+   -->
+
+It seems to me that one of the first few things that you'll be told to do as a new javascript programmer is to build a game. At Hacker Collective, we attempted to build a hangman game in the fastest time possible; it took me about 4 hours to build this game.
+
+Note: This article is most suitable for someone who knows Javascript fundamentals.
+
+Introduction
+
+A lot of my ideas were extracted from a codepen. The elements of a basic hangman game is straightforward. Have a:
+
+Keyboard ...]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Shine with Rshiny]]></title>
+            <link>https://example.com/posts/2019-06-13-shine-with-rshiny</link>
+            <guid>https://example.com/posts/2019-06-13-shine-with-rshiny</guid>
+            <pubDate>Thu, 13 Jun 2019 00:00:00 GMT</pubDate>
+            <description><![CDATA["A short tutorial on how to build reactive data applications using a popular framework in R"]]></description>
+        </item>
+    </channel>
+</rss>

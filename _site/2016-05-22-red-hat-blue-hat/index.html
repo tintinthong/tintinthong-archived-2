@@ -1,0 +1,202 @@
+<!doctype html><html><head><title>Red Hat Blue Hat | Author's fancy blog</title><meta charset="utf-8"><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.1/highlight.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.1/languages/elm.min.js"></script><script>hljs.initHighlightingOnLoad();</script><link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.1/styles/default.min.css" rel="stylesheet" type="text/css"><link href="//fonts.googleapis.com/css?family=Open+Sans|Proza+Libre|Inconsolata" rel="stylesheet" type="text/css"></head><body><div class="header-logo"><img alt="Author's blog" src="/img/logo.png" width="100"></div><div class="navigation"><ul><li><a href="/posts">Posts</a></li><li><a href="/about">About</a></li><li><a href="/contact">Contact</a></li></ul></div><div class="sidebar"></div><div class="sidebar2"></div><div class="content"><h1>Red Hat Blue Hat</h1><div class="post-metadata"><span>2016-05-22</span><span>•</span><a href="/tags/puzzle">puzzle</a></div><div class="markdown"><h2 id="problem">Problem</h2>
+<p>There are 3 red hats and 2 blue hats in a box and everybody knows. Three people stand in a line facing in one direction. The 3rd person in the line, can see the top of the 1st and 2nd person’s head. The 2nd person in the line can only see the top of the 1st person’s head, but not the 3rd person’s head. The 1st person cannot see neither the 2nd nor the 3rd person’s head. All are blindfolded. And as they cannot see, an alien places at random a hat from the box on each of their head’s.</p>
+<p>The 3rd person in line, unfolds his blindfold and shouts “I do not know what the color of my hat is”. The second person in line, unfolds his blindfold and shouts “I do not know what the color of my hat is”. What is the color of the 1st person’s hat?</p>
+<h2 id="solution">Solution</h2>
+<blockquote>
+<p>The 3rd person in line, unfolds his blindfold and shouts “I do not know what the color of my hat is”</p>
+</blockquote>
+<p>Since there are only 2 blue hats, if the 2nd and the 1st person  were both wearing blue hats then the 3rd person would know that his hat is red. However, he does not. So at least one of them is wearing a red hat.</p>
+<blockquote>
+<p>The 2nd person in line, unfolds his blindfold and shouts “I do not know what the color of my hat is”</p>
+</blockquote>
+<p>Since at least one of them (1st person and 2nd person) is wearing a red hat, the 2nd person would know what hat he was wearing if the 1st person was wearing a blue hat. However, he does not.</p>
+<blockquote>
+<p>What is the color of the 1st person’s hat?</p>
+</blockquote>
+<p>So now the only left-over possibility is that the 1st person is wearing a red hat.</p>
+<ul>
+<li><p>3 2 1</p>
+</li>
+<li><p>3 B B  (impossible because 3 didn’t know)</p>
+</li>
+<li><p>? 2 B  (impossible because 2 didn’t know)</p>
+</li>
+<li><p>? B R (possible)</p>
+</li>
+<li><p>? R R (possible)</p>
+</li>
+</ul>
+<h2 id="assumption">Assumption</h2>
+<p>There is one assumption that is essential to know to be able to solve this puzzle.</p>
+<blockquote>
+<p>You must assume everyone is logical / telling the truth .</p>
+</blockquote>
+<p>Particular descriptions of this puzzle will tell you to “assume that all the people standing are logicians (or honest people)”. It is a fatal flaw to account for truthfulness and will lead to expansion of the problem solution scope. </p>
+<ol>
+<li><p>Consider if the 3rd person can lie (and the 2nd person only tells the truth). Would the 1st person still know what his hat is? Well, the 2nd person while still blindfolded would know the possibilities R B B (if the 3rd person was lying) or ? R B / ? B R / ? R R (if the thrid person was telling the truth). After being unblindfolded, he would not be able to give an honest answer because he would still have two choices for the case where he observes a red or blue hat in front of him. Hence, the 1st person cannot deduce what color of hat is.</p>
+</li>
+<li><p>Consider if the 2nd person can lie (and the 3rd person only tells the truth). As per original, 3 B B would be an impossibility. Therefore, 2nd person while still blindfolded would know the possibilities ? B R or ? R R or ? R B. If he sees a blue hat, he can lie or tell the truth. If he sees a red hat, he would not have the option of telling the truth so he is unknowing. It follows that the 1st person would not be able to deduce what color his hat is. </p>
+</li>
+</ol>
+<h2 id="exercise">Exercise</h2>
+<p>In  each of these cases, can the 1st person know the probability of his hat being red or blue?</p>
+</div></div><div class="footer"><img alt="Author's blog" src="/img/logo.png" style="float: left; padding-top: 7px" width="75"><div class="link"><svg width="16" height="16" viewbox="0 0 16 16"><path fill="#fff" d="
+M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z
+            "></path></svg><a href="https://github.com/tintinthong">My Github</a></div></div><link href="/styles.css" rel="stylesheet" type="text/css"><style>body {
+    padding:0px;
+    margin:0px;
+    background-color:#ffffff;
+    color:#363636;
+    font-family:Open Sans, Arial, sans-serif;
+    font-size:18px;
+    line-height:1.4em;
+}
+
+a {
+    color:#348aa7;
+    text-decoration:none;
+}
+
+code {
+    font-family:Inconsolata, monospace;
+}
+
+pre  code {
+    overflow-x:scroll !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:Proza Libre, Helvetica, sans-serif;
+    line-height:1.1em;
+}
+
+h1 {
+    font-size:2.66667em;
+    margin-bottom:2.0202rem;
+}
+
+h2 {
+    font-size:2em;
+    margin-bottom:1.61616rem;
+}
+
+h3 {
+    font-size:1.33333em;
+    margin-bottom:1.21212rem;
+}
+
+h4 {
+    font-size:1.2em;
+    margin-bottom:0.80808rem;
+}
+
+h5, h6 {
+    font-size:1em;
+    margin-bottom:0.60606rem;
+}
+
+p {
+    margin:auto auto 1.5rem;
+}
+
+small {
+    font-size:65%;
+}
+
+.header-logo {
+    padding-top:6px;
+    text-align:center;
+    background-color:#f2fae8;
+}
+
+@media only screen and (min-width: 600px) {
+    .header-logo {
+        text-align:left;
+    border-bottom:2px solid #3c8765;
+    }
+}
+
+.navigation {
+    text-align:center;
+    border-bottom:2px solid #3c8765;
+    background-color:#f2fae8;
+    padding:10px;
+    margin-top:-20px;
+}
+
+@media only screen and (min-width: 600px) {
+    .navigation {
+        margin-top:0px;
+    padding:0px;
+    text-align:right;
+    }
+}
+
+.navigation  ul {
+    margin:0px;
+    padding:0px;
+}
+
+@media only screen and (min-width: 600px) {
+    .navigation  ul {
+        line-height:100px;
+    }
+}
+
+.navigation  li {
+    display:inline-block;
+    margin-right:20px;
+}
+
+.content {
+    max-width:100vw;
+}
+
+.footer {
+    text-align:center;
+    border-top:2px solid #2f4858;
+    background-color:#348aa7;
+    color:#ffffff;
+}
+
+@media only screen and (min-width: 600px) {
+    .footer {
+        line-height:80px;
+    text-align:right;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .footer  .link {
+        display:inline-block;
+    margin-right:20px;
+    }
+}
+
+.footer  a {
+    color:#ffffff;
+    text-decoration:none;
+}
+
+.footer  svg {
+    padding-right:5px;
+    vertical-align:baseline;
+}
+
+.post-metadata {
+    margin-top:-0.5em;
+    margin-bottom:2em;
+}
+
+.post-metadata  a, .post-metadata  span {
+    display:inline-block;
+    margin-right:5px;
+}
+
+.post-metadata  a {
+    border:1px solid #e0e0e0;
+    border-radius:3px;
+    background-color:#f2fae8;
+    padding-left:5px;
+    padding-right:5px;
+}</style></body></html>

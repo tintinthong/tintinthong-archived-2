@@ -1,0 +1,6 @@
+Building simple shell script for git commands. to enable committing
+- bash command 
+- capture if errror
+Project Euler using Haskell
+Learn About haskell
+- haskell is the girl you loved at camp but never got to cause she lived far away 
